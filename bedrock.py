@@ -18,7 +18,8 @@ client = boto3.client(
 
 # The model ID for the model you want to use
 model_id = "anthropic.claude-3-sonnet-20240229-v1:0"
-with open("C:/Users/EEE/INRIX HackaThon/aws-access-24/food1.png", "rb") as image_file:
+image_file_path = "C:/Users/EEE/INRIX HackaThon/aws-access-24/food1.png"
+with open(image_file_path, "rb") as image_file:
     image_bytes = image_file.read()
 
 
